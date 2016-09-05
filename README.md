@@ -1,1 +1,1 @@
-# chef-baseline
+# powerline-chef-baseline
