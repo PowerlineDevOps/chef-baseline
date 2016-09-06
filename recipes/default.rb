@@ -8,3 +8,6 @@ include_recipe 'apt'
 
 include_recipe 'powerline-chef-baseline::apt'
 include_recipe 'powerline-chef-baseline::users'
+
+# Install curl
+package ['curl']
