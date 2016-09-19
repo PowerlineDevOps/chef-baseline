@@ -12,3 +12,10 @@ include_recipe 'powerline-chef-baseline::dirs'
 
 # Install curl
 package ['curl']
+
+# ntp
+cron 'ntp' do
+  time :daily
+  job "ntpdate ntp.ubuntu.com"
+  user "root"
+end
