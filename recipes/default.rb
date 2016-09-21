@@ -16,6 +16,6 @@ package ['curl']
 # ntp
 cron 'ntp' do
   time :daily
-  job "ntpdate ntp.ubuntu.com"
+  command "ntpdate ntp.ubuntu.com"
   user "root"
 end
