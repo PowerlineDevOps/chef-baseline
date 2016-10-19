@@ -10,8 +10,8 @@ include_recipe 'powerline-chef-baseline::apt'
 include_recipe 'powerline-chef-baseline::users'
 include_recipe 'powerline-chef-baseline::dirs'
 
-# Install curl
-package ['curl']
+# Install packages
+package %w{curl unzip}
 
 # ntp
 cron 'ntp' do
